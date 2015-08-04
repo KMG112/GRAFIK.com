@@ -1,40 +1,55 @@
 var app = angular.module("app", ["ngAnimate"]);
 
-app.controller("NavbarController", function(){
-	this.isExpanded = false;
-	this.expandHamburger = function(){
-		this.isExpanded = true;
-	};
-	this.collapsHamburger = function(){
-		this.isExpanded = false;
+app.controller("NavbarController", function($scope){
+
+	// $scope.class = "active";
+
+	// this.isExpanded = false;
+	// this.expandHamburger = function(){
+	// 	this.isExpanded = true;
+	// };
+	// this.collapsHamburger = function(){
+	// 	this.isExpanded = false;
+	// }
+})
+var active = false;
+var spanHolder = document.getElementById("span-holder")
+spanHolder.addEventListener('click',function(event){
+	event.preventDefault;
+	active = !active;
+	if(active){
+		spanHolder.className = "active";
+	}else{
+		spanHolder.className = "inactive";
 	}
+
 })
 
-app.directive("expandMe", function($animate){
-	return function(scope, element, attrs){
-		scope.$watch(attrs.expandMe, function(newVal){
-			if (newVal) {
-			$animate.addClass(element, "expand");
-		}else {
-                $animate.removeClass(element, "expand");
-            }
-		});
-	}
-})
+// app.directive("expandMe", function($animate){
+// 	return function(scope, element, attrs){
+// 		scope.$watch(attrs.expandMe, function(newVal){
+// 			if (newVal) {
+// 			$animate.addClass(element, "expand");
+// 		}else {
+//                 $animate.removeClass(element, "expand");
+//             }
+// 		});
+// 	}
+// })
 
-app.animation(".expand", function(){
+// app.animation(".expand", function(){
 
-	return {
-		    addClass: function(element, className){
+// 	return {
+// 		    addClass: function(element, className){
 
-		    		TweenMax.to(element, 1, {marginTop: "1px", marginBottom: "1px"});
+// 		    		TweenMax.to(element, 1, {transformOrigin: "topLeft"});
 				
-			},
-            removeClass: function(element, className) {
-            TweenMax.to(element, 1, {y:-20});
-        }
-		}
-})
+// 			},
+//             removeClass: function(element, className) {
+//             TweenMax.to(element, 1, {y:-20});
+//         }
+// 		}
+// })
 
 // var app = angular.module("app", ["ngAnimate"]);
 
