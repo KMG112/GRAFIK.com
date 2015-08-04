@@ -1,0 +1,49 @@
+<!doctype html>
+<html class="no-js" lang="en" ng-app="app">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation</title>
+    <link rel="stylesheet" href="../stylesheets/app.css" />
+    <link rel="stylesheet" href="../sass/navbar.sass" />
+    <script src="../bower_components/modernizr/modernizr.js"></script>
+   
+  </head>
+  
+  <body ng-controller="NavbarController as navbar" >
+    <nav class="top-bar" data-topbar role="navigation">
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="#">G</a></h1>
+    </li>
+     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+  
+  </ul>
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
+      <li ><a href="#">[picture]</a></li>
+      <li>
+        <a href="#">Contact</a>
+      </li>
+      
+      <li id="hamburger" ng-mouseover="navbar.expandHamburger()" ng-mouseleave="navbar.collapsHamburger()">
+        <div id="span-holder"><span id="span-1" ></span><span id="span-2" expand-me="navbar.isExpanded"></span><span id="span-3" ></span></div>
+      </li>
+    </ul>
+
+    <!-- Left Nav Section -->
+    <ul class="left">
+      <li><a href="#">Grafik: the right idea[picture] </a></li>
+    </ul>
+  </section>
+</nav>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular-animate.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.2/TweenMax.min.js"></script>
+   <script src="../js/navbar.js"></script>
+
+  </body>
+</html>
+
