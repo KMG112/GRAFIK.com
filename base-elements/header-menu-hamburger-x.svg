@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="23" height="23" viewBox="0 0 23 23">
+  <defs>
+    <style>
+
+      .cls-3 {
+        fill: #ffffff;
+      }
+    </style>
+  </defs>
+  <g id="header-menu-hamburger-xsvg">
+    <path d="M-0.009,19.839 C-0.009,19.839 19.821,0.000 19.821,0.000 C19.821,0.000 22.465,2.645 22.465,2.645 C22.465,2.645 2.635,22.485 2.635,22.485 C2.635,22.485 -0.009,19.839 -0.009,19.839 Z" id="path-1" class="cls-3" fill-rule="evenodd"/>
+    <path d="M2.635,0.000 C2.635,0.000 22.465,19.839 22.465,19.839 C22.465,19.839 19.821,22.485 19.821,22.485 C19.821,22.485 -0.009,2.645 -0.009,2.645 C-0.009,2.645 2.635,0.000 2.635,0.000 Z" id="path-2" class="cls-3" fill-rule="evenodd"/>
+  </g>
+</svg>
