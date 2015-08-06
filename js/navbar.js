@@ -1,17 +1,4 @@
-var app = angular.module("app", ["ngAnimate"]);
 
-app.controller("NavbarController", function($scope){
-
-	// $scope.class = "active";
-
-	// this.isExpanded = false;
-	// this.expandHamburger = function(){
-	// 	this.isExpanded = true;
-	// };
-	// this.collapsHamburger = function(){
-	// 	this.isExpanded = false;
-	// }
-})
 var active = false;
 var spanHolder = document.getElementById("span-holder")
 spanHolder.addEventListener('click',function(event){
