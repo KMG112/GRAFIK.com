@@ -1,0 +1,119 @@
+/*
+	GRAFIK 2016 - STYLES
+	(C)2016 Grafik. All rights reserved.
+	Optimized for Sublime Text
+*/
+
+/* GLOBALS */
+
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		-webkit-font-smoothing: antialiased;
+		-moz-font-smoothing: antialiased;
+		font-smoothing: antialiased;
+		font-family: sans-serif;
+		vertical-align: top;
+	}
+	body { min-width: 320px; font-size: 16px; background: #000; color: #fff; }
+	.limit-width { margin: 0 auto; max-width: 1200px; }
+	.sep { margin: 0 10px; }
+	.grafik { text-transform: uppercase; }
+	.orange { color: #f60; }
+	ul.unloaded { list-style-type: none; overflow: auto; }
+	ul.unloaded li { display: block; float: left; }
+
+/* FLEX */
+
+	.flex-container {
+		display: -ms-flexbox; display: -webkit-flex; display: flex;
+		-webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row;
+		-webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap;
+		-webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start;
+		-webkit-align-content: stretch; -ms-flex-line-pack: stretch; align-content: stretch;
+		-webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start;
+	}
+	.flex-item {
+		-webkit-order: 0; -ms-flex-order: 0; order: 0;
+		-webkit-flex: 0 1 auto; -ms-flex: 0 1 auto; flex: 0 1 auto;
+		-webkit-align-self: auto; -ms-flex-item-align: auto; align-self: auto;
+	}
+
+/* CASE STUDY / WORK IMAGE BLOCKS (MULTI USE) */
+
+	.Grafik2016-CaseStudyWorkImageBlocks { padding: 50px 0; background: #fff; text-align: center; }
+	.Grafik2016-CaseStudyWorkImageBlocks h2 { margin-bottom: 25px; text-align: center; color: #333; }
+	.Grafik2016-CaseStudyWorkImageBlocks .flex-container { display: -ms-inline-flexbox; display: -webkit-inline-flex; display: inline-flex; }
+	.Grafik2016-CaseStudyWorkImageBlocks .flex-item { width: 600px; height: 300px; }
+	.Grafik2016-CaseStudyWorkImageBlocks .flex-item:nth-of-type(4n+1) { background: #999; }
+	.Grafik2016-CaseStudyWorkImageBlocks .flex-item:nth-of-type(4n+2) { background: #666; }
+	.Grafik2016-CaseStudyWorkImageBlocks .flex-item:nth-of-type(4n+3) { background: #333; }
+	.Grafik2016-CaseStudyWorkImageBlocks .flex-item:nth-of-type(4n+4) { background: #000; }
+
+/* FOOTER (SINCE USE) */
+
+	#Grafik2016-Footer a { text-decoration: none; color: #fff; }
+	#Grafik2016-Footer .flex-item { padding: 50px 100px; width: 50%; }
+	#Grafik2016-Footer .flex-item:last-child { -webkit-align-self: flex-end; -ms-flex-item-align: end; align-self: flex-end; }
+	#Grafik2016-FooterTop { background: #333; color: #ccc; }
+	#Grafik2016-FooterTop form p + p { margin-top: 10px; }
+	#Grafik2016-FooterTop form input[type=email] { border: none; padding: 0 10px; width: 75%; height: 50px; font-size: inherit; }
+	#Grafik2016-FooterTop form button { border: none; width: 25%; height: 50px; font-size: inherit; background: #f60; color: #fff; }
+	#Grafik2016-FooterTop .single-tweet { min-height: 50px; padding: 0 0 0 70px; background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAFUUlEQVR4Xu2bi1EUQRCGuyNQIlAiECIQIlAjECIQIlAiUCJQIlAjUCIQIhAjECJo69vqPef29jGvvePQqdoScHa6+59+z6zKzMPMHovIcxHZ84ffn/oTUr8REZ5bEbny51JV+X22oXOsbGYI+1pEDlzoEjKA8V1ELlSVn6uOagD4TiP0Sc/u1mIaAD45GFU0oxgAF/yNC456r2Mg/AcROS81kSIAzIwdh5F1Cd4FFyBOVPUiF/UsAMwMJ/bRbTyXds338BHHqooTTRrJAJjZSxd+U7s+JCDaAAhfUhBIAsDM3rutp9BY99wPqnoaSzQaADND5Y9iF97wvE+qehzDQxQAWyZ8K3cUCJMAbKnw0SCMAmBmhDhi/DYPcgWSs94xCIB7+8/bLHnA+6uh6NALgMf5HxtMcGrjTojc78sThgD4do+SnFpgfFfVw+5iKwCYGaGOkPcQB4kSxdRiLAHghc3PB6T63U3EFHbDAqoLwDsRebvhrf8lIqSzbblL3UFf4Uklvs5UFTmbsQCgYPfvRORRBeauvbKjsFkZbpqE5ZAWVSDzU0x2SQtCAIiV5PqpA8cCY89SXwzmI/zBVG3vnSb4RGic2o2Z5TjsU1WF5yUNwPZRt5Rxrap7rj0wlQMCKr83JfyAVuQmalequr8AwJEl7qcOmpbYpzgIeNgXiYuseOaY980MTYA2/oJ/ac6kDPKCq8YEClLeJYfia6WY0p2qFvUVCsJ2kyK3ALD7dHJTx0IDwhddo1BP2uFjo/f9WCYKhIdEYwbqqvs7lmhn3o2q7g69a2aoJiFnCIgVDYrlw8xqhOwdAKDFVVL0HKpqb+hqhfHaAjpkmaGjHK3UxsAwM2hOadgUnq8AoBTJhUedohYA0jhOok43NU1YowYAZwCAF0313C2fhDAytKjuS6xwMfMqacAFAJQgeeYnNewomlD96GrEv1gMUJNO2MxyEqB23a+qim2vdRQ67pDXKzSgFMmdnCyuBLEKjntBvgYA2aEsF4SCxG2FZA0AWLRJK3MFSn2v0GyXyNUCIOtYKlVw5ntyRQVYZQAAB4q1mg1EFI6mvlbhrmeRzPJ3iJ3r0jAYLsx5HGZwO5c51N59EbksTYRCAHq7rjU1ofLuw1qTCJWmwqGMWbV9DEhe/+d0rMaWb1Lh0mKoS4AbG+cxQsXO8fIax1fUO+ih1xRDLJpbDg/JUM0ZOn8In9OvmMJ4p22I4Lxy+nlTBPj/bLOYWfimn1naEhsD4NLb3FkJ0szCw/dSSwz1ymmKdgGgPG7VP0twT3bghyZNapc6RiPbOX+bok40NSFCUJxde4JDeyz5llbIcXDncHFykyJRwtxG/ZlfejCCwDBLWZx9c9MFpymzrjuHvQcjRAMEyjnmQng6S3SGsP3JEVyiJgzz1A5xQzxwlEcrrtmwuQ5H29vefSaB6mHbc4S1SeBFpP9w1P1AiRbEEN/0nKXdX9EAB+HfvSDRbk9ho3TTuzxEv/cUauySFHac4xDvIwCoPifQKz7p/zW5se2q2XzcoFrkXZQM/AFn/qln7xuUd4k03xmNXvCevCvskWEbQZgUvjcMDm2dmW0TCFHCJwHgmpB7J2edJpF05B5lAp2KjbwdbbhvIZJQdzTrJzOBYySXB4TSCwq1NIMCDOGTy/FkDehoAx62e3mxllAx62TterhwEQBBAcXNMJ51mQWCAzynUNl9iGQnOJE0UUmiEd17QDE7GTuHG6WYHn2HIsFbgsUa0Me59/EBgpsjpd1mhKb9htDZfcYhhGcBoOMn0Iz2K/L2s3n+1gUGQdnV9jP65qvxWjs9BMAfQ+gsSubVk5AAAAAASUVORK5CYII=') no-repeat 0% 0%; background-size: 50px 50px; }
+	#Grafik2016-FooterBottom { font-size: 12px; color: #999; }
+	#Grafik2016-FooterBottom .main-nav li { line-height: 24px; }
+	#Grafik2016-FooterBottom .main-nav li + li { margin-left: 25px; }
+	#Grafik2016-FooterBottom .main-nav a { text-transform: uppercase; }
+	#Grafik2016-FooterBottom .social-nav li + li { margin-left: 25px; }
+	#Grafik2016-FooterBottom .location { -webkit-order: 1; -ms-flex-order: 1; order: 1; }
+
+/* BREAKPOINTS */
+
+@media only screen and (max-width:1199px) {
+
+	.Grafik2016-CaseStudyWorkImageBlocks .flex-container { width: 1000px; }
+	.Grafik2016-CaseStudyWorkImageBlocks .flex-item { width: 500px; height: 250px; }
+
+	#Grafik2016-Footer .flex-item { padding: 50px; }
+
+}
+@media only screen and (max-width:991px) {
+
+	.Grafik2016-CaseStudyWorkImageBlocks { padding: 25px 0; }
+	.Grafik2016-CaseStudyWorkImageBlocks .flex-container { width: 600px; }
+	.Grafik2016-CaseStudyWorkImageBlocks .flex-item { width: 600px; height: 300px; }
+
+	#Grafik2016-Footer .flex-item { padding: 25px; }
+
+}
+@media only screen and (max-width:767px) {
+
+	.Grafik2016-CaseStudyWorkImageBlocks { padding: 20px 0; }
+	.Grafik2016-CaseStudyWorkImageBlocks .flex-container { width: 400px; }
+	.Grafik2016-CaseStudyWorkImageBlocks .flex-item { width: 400px; height: 200px; }
+
+	#Grafik2016-Footer { text-align: center; }
+	#Grafik2016-Footer .flex-item { padding: 20px; width: 100%; }
+	#Grafik2016-Footer ul { display: inline-block; }
+	#Grafik2016-FooterTop .single-tweet { margin: 0 auto; padding: 40px 0 0 0; background-position: 50% 0; background-size: 30px 30px; max-width: 50%; }
+	#Grafik2016-FooterTop form { margin: 0 auto; max-width: 75%; }
+	#Grafik2016-FooterBottom .location,
+	#Grafik2016-FooterBottom .legal { -webkit-order: 0; -ms-flex-order: 0; order: 0; }
+
+}
+@media only screen and (max-width:479px) {
+
+	.Grafik2016-CaseStudyWorkImageBlocks .flex-container { width: 300px; }
+	.Grafik2016-CaseStudyWorkImageBlocks .flex-item { width: 300px; height: 150px; }
+
+	#Grafik2016-FooterTop .single-tweet { max-width: 100%; }
+	#Grafik2016-FooterTop form { max-width: 100%; }
+	#Grafik2016-FooterBottom { font-size: 10px; }
+	#Grafik2016-FooterBottom .main-nav li + li { margin-left: 10px; }
+	#Grafik2016-FooterBottom .social-nav li + li { margin-left: 10px; }
+
+}
+@media only screen and (max-width:319px) {
+
+}
