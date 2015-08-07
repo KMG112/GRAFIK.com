@@ -1108,6 +1108,9 @@ $veryLightGrey  :#eeeced;
 // $range-slider-round: $global-rounded;
 // $range-slider-bar-bg-color: $ghost;
 // $range-slider-active-segment-bg-color: scale-color($secondary-color, $lightness: -1%);
+$range-slider-bar-border-width: 0;
+$range-slider-bar-bg-color: #555555;
+$range-slider-active-segment-bg-color: #ff6600;
 
 // Vertical bar styles
 // $range-slider-vertical-bar-width: rem-calc(16);
@@ -1125,6 +1128,11 @@ $veryLightGrey  :#eeeced;
 // $range-slider-handle-round: $global-rounded;
 // $range-slider-handle-bg-hover-color: scale-color($primary-color, $lightness: -12%);
 // $range-slider-handle-cursor: pointer;
+
+$range-slider-handle-width: rem-calc(18);
+$range-slider-handle-bg-color: $grafikO;
+$range-slider-handle-bg-hover-color: scale-color($grafikO, $lightness: -12%);
+ $range-slider-handle-height: rem-calc(25);
 
 // $range-slider-disabled-opacity: .7;
 // $range-slider-disabled-cursor: $cursor-disabled-value;
@@ -1360,6 +1368,10 @@ $veryLightGrey  :#eeeced;
 
 // $tabs-vertical-navigation-margin-bottom: 1.25rem;
 
+$tabs-navigation-bg-color: #333333;
+$tabs-navigation-active-bg-color: #333333;
+$tabs-navigation-font-color: #ffffff;
+$tabs-navigation-active-font-color: white;
 // 32. Thumbnails
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
