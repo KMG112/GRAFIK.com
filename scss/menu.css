@@ -1,13 +1,10 @@
-*{
-	border: 1px black solid;
-	
-}
 
 #menu{
+	color: white;
+	padding: 0;
 	background-color: black;
-	height: 675px;
 }
-ul{
+#menu ul{
 
 	list-style-type: none;
 }
@@ -15,12 +12,12 @@ ul{
 	margin-top: 100px;
 
 }
-ul li{
+
+#menu-items ul li{
 	margin: -50px;
 }
 
-h2{
-
+#menu-items h2{
 	color: white;
 	font-size: 50px;
 }
@@ -30,4 +27,77 @@ h2{
 }
 #menu-items{
 
+}
+
+#info-show-menu{
+	padding: 15px;
+	height: 300px;
+	margin-top: 50px;
+}
+#info-show-menu h4{
+	color:white;
+}
+#info-show-menu h3{
+	color:#AFAFAF;
+}
+#info-show-menu button{
+	background-color: black;
+	border: 2px white solid;
+	line-height: 10px;
+	margin: 20px 0 0 20px;
+}
+#media-for-show-menu{
+	margin-top: 10px;
+	background: white;
+	height: 180px;
+}
+#text-for-show-menu{
+	color: #AFAFAF;
+}
+#contact-info-for-show-menu h3{
+	color:#535353;
+}
+
+#social-media-for-show-menu div{
+	border: 1px white solid;
+	height: 50px;
+	margin: 20px 0 20px 0
+}
+#social-media-for-show-menu a {
+	margin-right: -10px;
+}
+#social-media-for-show-menu a {
+	margin-right: -10px;
+}
+ #search-icon-640:before{
+ 	content: url("../base-elements/menu-640-search-icon.svg");
+ 	border-bottom: 1px #CCCCCC solid;
+ 	padding-bottom: 16px;
+ }
+
+
+#menu-items input {
+	height: 50px;
+	padding: 0;
+	padding-top: 10px;
+	line-height: 30px;
+	color: white;
+	border-top:none;
+	border-right: none;
+	border-left: none;
+	background-color: rgba(0, 0, 0, .5)
+}
+
+
+::-webkit-input-placeholder {
+	overflow: visible;
+	font-size: 50px;
+	padding-bottom: 40px;
+	line-height: 20px;
+}
+
+
+
+#menu-items li div {
+	padding: 0;
 }

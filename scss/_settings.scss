@@ -118,7 +118,7 @@ $include-html-global-classes: $include-html-classes;
 $grafikO  : #ff6600;
 $GreyLight :#555555;
 $darkGrey  : #333333;
-$lightBackground : #333333;
+$veryLightGrey  :#eeeced;
 
 // We use these as default colors throughout
 // $primary-color: #008CBA;
@@ -932,6 +932,7 @@ $lightBackground : #333333;
 // $orbit-nav-bg-hover: rgba(0,0,0,0.3);
 // $orbit-nav-arrow-color: $white;
 // $orbit-nav-arrow-color-hover: $white;
+$orbit-nav-bg-hover: rgba(0,0,0,0);
 
 // We use these to control the timer styles
 // $orbit-timer-bg: rgba(255,255,255,0.3);
@@ -1108,6 +1109,9 @@ $lightBackground : #333333;
 // $range-slider-round: $global-rounded;
 // $range-slider-bar-bg-color: $ghost;
 // $range-slider-active-segment-bg-color: scale-color($secondary-color, $lightness: -1%);
+$range-slider-bar-border-width: 0;
+$range-slider-bar-bg-color: #555555;
+$range-slider-active-segment-bg-color: #ff6600;
 
 // Vertical bar styles
 // $range-slider-vertical-bar-width: rem-calc(16);
@@ -1125,6 +1129,11 @@ $lightBackground : #333333;
 // $range-slider-handle-round: $global-rounded;
 // $range-slider-handle-bg-hover-color: scale-color($primary-color, $lightness: -12%);
 // $range-slider-handle-cursor: pointer;
+
+$range-slider-handle-width: rem-calc(18);
+$range-slider-handle-bg-color: $grafikO;
+$range-slider-handle-bg-hover-color: scale-color($grafikO, $lightness: -12%);
+ $range-slider-handle-height: rem-calc(25);
 
 // $range-slider-disabled-opacity: .7;
 // $range-slider-disabled-cursor: $cursor-disabled-value;
@@ -1360,6 +1369,10 @@ $lightBackground : #333333;
 
 // $tabs-vertical-navigation-margin-bottom: 1.25rem;
 
+$tabs-navigation-bg-color: #333333;
+$tabs-navigation-active-bg-color: #333333;
+$tabs-navigation-font-color: #ffffff;
+$tabs-navigation-active-font-color: white;
 // 32. Thumbnails
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -1411,7 +1424,7 @@ $lightBackground : #333333;
 // Background color for the top bar
 // $topbar-bg-color: $oil;
 // $topbar-bg: $topbar-bg-color;
-
+$topbar-bg-color: #000000;
 // Height and margin
 // $topbar-height: rem-calc(45);
 // $topbar-margin-bottom: 0;
@@ -1493,3 +1506,7 @@ $lightBackground : #333333;
 // $include-accessibility-classes: true;
 // $include-table-visibility-classes: true;
 // $include-legacy-visibility-classes: true;
+
+
+
+

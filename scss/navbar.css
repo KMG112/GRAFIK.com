@@ -1,4 +1,6 @@
-
+.name a {
+	padding:0 10px 0 10px;
+}
 
 @for $i from 1 through 3 {
   #span-#{$i} {
@@ -10,6 +12,16 @@
   }
  }
 
+ #grafik-logo-pic:before{
+ 	content: url("../base-elements/menu-1200-grafik-logo.svg");
+ }
+ #grafik-mantra-pic:before{
+ 	content: url("../base-elements/menu-1200-grafik-mantra.png");
+ }
+ #grafik-share-pic:before{
+ 	content: url("../base-elements/header-share-icon.svg");
+ }
+
 #hamburger{
 	width: 30px;
 	height: 20px;
@@ -19,7 +31,7 @@
 	display: block;
 	height: 0;
 	width: 20px;
-	border:1px solid red;
+	border:2px solid white;
 	margin-bottom: 3px;
 }
 
@@ -28,7 +40,7 @@
 	display: block;
 	height: 0;
 	width: 20px;
-	border:1px solid red;
+	border:2px solid white;
 
 }
 
@@ -36,7 +48,7 @@
 	display: block;
 	height: 0;
 	width: 20px;
-	border:1px solid red;
+	border:2px solid white;
 	margin-top: 3px;
 }
 #span-holder{
@@ -78,6 +90,7 @@
 }
 
 .active span:nth-child(2){
+
 	margin-top: 5px;
 	margin-bottom: 5px;
 	transition: opacity 0.25s ease;

@@ -7,6 +7,7 @@
       
     <link rel="stylesheet" href="../stylesheets/app.css" />
   <link rel="stylesheet" type="text/scss" href="../scss/menu.css" />
+  <link rel="stylesheet" type="text/scss" href="../stylesheets/buttons.css" />
     <script src="../bower_components/modernizr/modernizr.js"></script>
    
   </head>
@@ -14,22 +15,48 @@
   <body>
   
   <div class="large-12 columns" id="menu">
-    <div class="large-7 large-offset-2 columns" id="list-holder">
-      <ul class="large-5 large-offset-1columns " id="menu-items">
+    <div class="large-6 large-offset-1 columns" id="list-holder">
+      <ul class="large-5 large-offset-1 columns " id="menu-items">
         <li><a href=""><h2>Branding</h2></a></li>
         <li><a href=""><h2>Work</h2></a></li>
         <li><a href=""><h2>Blog</h2></a></li>
         <li><a href=""><h2>About</h2></a></li>
         <li><a href=""><h2>Contact</h2></a></li>
-        <li><a href=""><h2>Search</h2></a></li>
+        <li>
+            <div class="small-11 columns">
+              <input type="text" placeholder="Search" />
+            </div>
+            <div class="small-1 columns">
+              <span id="search-icon-640"></span>
+            </div>
+        </li>
       </ul>
     </div>
-    <div class="large-5 columns" id="right">
-      <div class="row">
-        
+    <div class="large-5 columns " id="right">
+      <div class="row show-for-large-only" id="info-show-menu">
+        <h3 class="12-large columns" >How We See It</h3>
+        <div class="large-4 columns" id="media-for-show-menu"></div>
+        <div id="text-for-show-menu" class="large-8 columns">
+          <h4>H4 HEADER</h4>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam dolorum facilis fuga aut, enim possimus quis ipsam labore omnis a.</div>
+          <button>DOWNLOAD</button>
       </div>
-      <div class="row"></div>
-      <div class="row"></div>
+      <div class="row" id="social-media-for-show-menu">
+       <a href="#" class="linkedin icon-button"><i class="icon-linkedin"></i><span></span></a>
+      <a href="#" class="facebook icon-button"><i class="icon-facebook"></i><span></span></a>
+      <a href="#" class="googleplus icon-button"><i class="icon-googleplus"></i><span></span></a>
+      <a href="#" class="pinterest icon-button"><i class="icon-pinterest"></i><span></span></a>
+
+      <a href="#" class="twitter icon-button"><i class="icon-twitter"></i><span></span></a>
+      <a href="#" class="tumblr icon-button"><i class="icon-tumblr"></i><span></span></a>
+      <a href="#" class="dribbble icon-button"><i class="icon-dribbble"></i><span></span></a>
+      <a href="#" class="instagram icon-button"><i class="icon-instagram"></i><span></span></a>
+      <a href="#" class="behance icon-button"><i class="icon-behance"></i><span></span></a>
+      </div>
+      
+      <div class="row" id="contact-info-for-show-menu">
+        <h3 class="large-6 small-6 columns" id="phone-show-menu">703 299 4500</h3> <h3 class="large-6 small-6 columns " id="directions-show-menu">Directions</h3>
+      </div>
     </div>
 </div>
 
