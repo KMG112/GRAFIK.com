@@ -25,12 +25,13 @@
 #hamburger{
 	width: 30px;
 	height: 20px;
+	background-color: black;
 }
 
 #span-1{
 	display: block;
 	height: 0;
-	width: 20px;
+	width: 25px;
 	border:2px solid white;
 	margin-bottom: 3px;
 }
@@ -39,7 +40,7 @@
 	
 	display: block;
 	height: 0;
-	width: 20px;
+	width: 25px;
 	border:2px solid white;
 
 }
@@ -47,7 +48,7 @@
 #span-3{
 	display: block;
 	height: 0;
-	width: 20px;
+	width: 25px;
 	border:2px solid white;
 	margin-top: 3px;
 }
@@ -68,10 +69,11 @@
 	margin-bottom: 3px;
 	}
 
+
 .active span:first-child{
 	margin-top: -3px;
-	transition: transform 0.5s ease;
-	transform-origin: top left;
+	transition: all 0.5s ease;
+	transform-origin: bottom left;
 	-ms-transform: rotate(45deg); /* IE 9 */
     -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
     transform: rotate(45deg);
@@ -81,7 +83,7 @@
 .active span:last-child{
 	margin-top: 3px;
 	margin-bottom: 3px;
-	transition: transform 0.5s ease;
+	transition: all 0.5s ease;
 	transform-origin: top left;
 	-ms-transform: rotate(-45deg); /* IE 9 */
     -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
@@ -90,16 +92,17 @@
 }
 
 .active span:nth-child(2){
-	margin-top: 0;
+	margin-top: 5px;
 	margin-bottom: 5px;
-	transition: opacity 0.25s ease;
+	transition: all 0.5s ease;
 	opacity: 0;
 }
 
 
 .inactive span:first-child{
-	transition: transform 0.5s ease;
-	transform-origin: middel;
+	margin-top: -3px;
+	transition: all 0.5s ease;
+	transform-origin: top;
 	-ms-transform: rotate(0deg); /* IE 9 */
     -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
     transform: rotate(0deg);
@@ -107,7 +110,9 @@
 }
 
 .inactive span:last-child{
-	transition: transform 0.5s ease;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	transition: all 0.5s ease;
 	transform-origin: top left;
 	-ms-transform: rotate(0deg); /* IE 9 */
     -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
@@ -116,6 +121,8 @@
 }
 
 .inactive span:nth-child(2){
-	transition: opacity 0.25s ease;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	transition: all 0.7s ease;
 	opacity: 1;
 }
