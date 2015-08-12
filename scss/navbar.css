@@ -1,5 +1,9 @@
-.name a {
-	padding:0 10px 0 10px;
+
+.name {
+	padding:5px 15px 0 15px;
+}
+.forza{
+	font-family: "Forza A" !important;
 }
 
 @for $i from 1 through 3 {
@@ -13,49 +17,58 @@
  }
 
  #grafik-logo-pic:before{
+
  	content: url("../base-elements/menu-1200-grafik-logo.svg");
  }
  #grafik-mantra-pic:before{
  	content: url("../base-elements/menu-1200-grafik-mantra.png");
  }
- #grafik-share-pic:before{
- 	content: url("../base-elements/header-share-icon.svg");
- }
+
+
 
 #hamburger{
 	width: 30px;
 	height: 20px;
-	background-color: black;
+	background-color: rgba(0,0,0,0);
+
+}
+#hamburger-holder{
+	padding-bottom: 25px;
+	padding-left: 20px;
+	padding-right: 10px;
 }
 
 #span-1{
+	/*border-radius: 20px;*/
 	display: block;
 	height: 0;
 	width: 25px;
-	border:2px solid white;
+	border:2px solid black;
 	margin-bottom: 3px;
 }
 
 #span-2{
-	
+	/*border-radius: 20px;*/
 	display: block;
 	height: 0;
 	width: 25px;
-	border:2px solid white;
-
+	border:2px solid black;
 }
 
 #span-3{
+	/*border-radius: 20px;*/
 	display: block;
 	height: 0;
 	width: 25px;
-	border:2px solid white;
+	border:2px solid black;
 	margin-top: 3px;
 }
 #span-holder{
 	margin-top: 15px;
 	
 }
+
+
 
 #span-holder:hover span:first-child {
 	margin-top: -3px;
@@ -68,9 +81,12 @@
 	margin-top: 3px;
 	margin-bottom: 3px;
 	}
+.title-area{
+	background-color: black;
+}
 
-
-.active span:first-child{
+.active #span-1{
+	border-color: white;
 	margin-top: -3px;
 	transition: all 0.5s ease;
 	transform-origin: bottom left;
@@ -81,6 +97,7 @@
 }
 
 .active span:last-child{
+	border-color: white;
 	margin-top: 3px;
 	margin-bottom: 3px;
 	transition: all 0.5s ease;
@@ -97,32 +114,251 @@
 	transition: all 0.5s ease;
 	opacity: 0;
 }
-
+.active #span-3{
+	border-color: white;
+}
 
 .inactive span:first-child{
-	margin-top: -3px;
-	transition: all 0.5s ease;
+	margin-top: 0;
+	margin-bottom: 3px;
 	transform-origin: top;
 	-ms-transform: rotate(0deg); /* IE 9 */
     -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
     transform: rotate(0deg);
-
+	transition: rotate 0.5s ease;
 }
 
 .inactive span:last-child{
 	margin-top: 3px;
-	margin-bottom: 3px;
-	transition: all 0.5s ease;
+	margin-bottom: 0;
+	
 	transform-origin: top left;
 	-ms-transform: rotate(0deg); /* IE 9 */
     -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
     transform: rotate(0deg);
-
+	transition: rotate 0.5s ease;
 }
 
 .inactive span:nth-child(2){
-	margin-top: 5px;
-	margin-bottom: 5px;
-	transition: all 0.7s ease;
+	margin-top: 0;
+	margin-bottom: 0;
+	transition: opacity 0.7s ease;
 	opacity: 1;
 }
+
+
+
+#menu{
+	font-family: "Forza A" !important;
+	z-index: -1;
+	display: none;
+	bottom: 100%;
+	height: 0;
+	width: 100%;
+	color: white;
+	padding: 0;
+	background-color: black;
+}
+#menu ul{
+
+	list-style-type: none;
+}
+#list-holder{
+	margin-top: 100px;
+	padding-left: 100px;
+}
+
+#menu-items ul li{
+	margin: -50px;
+}
+
+#menu-items h2{
+	color: white;
+	font-size: 50px;
+}
+
+#right-menu{
+	opacity: 0;
+	height: 675px;
+	padding-right: 100px;
+	padding-top: 46px;
+}
+
+
+#info-show-menu{
+	padding: 15px 15px 0 15px;
+	height: 300px;
+	margin-top: 50px;
+}
+#info-show-menu h4{
+	color:white;
+}
+#info-show-menu h3{
+	color:#AFAFAF;
+	padding: 0;
+}
+#info-show-menu button{
+	background-color: black;
+	border: 2px white solid;
+	line-height: 10px;
+	margin: 15px 0 0 20px;
+}
+#media-for-show-menu{
+	margin-top: 10px;
+	background: white;
+	height: 180px;
+}
+#text-for-show-menu{
+	color: #AFAFAF;
+	padding-bottom: 43px;
+	padding-top: 5px;
+}
+
+#contact-info-for-show-menu h3{
+	padding-top: 27px;
+	color:#999999;
+}
+#social-media-for-show-menu{
+	margin-top: -10px;
+	margin-left: -5px;
+}
+
+#social-media-for-show-menu div{
+	border: 1px white solid;
+	height: 50px;
+	margin: 20px 0 20px 0
+}
+#social-media-for-show-menu h3 {
+	color: #999999;
+	margin-left: 20px;
+}
+#social-media-for-show-menu a {
+	margin-right: -13px;
+}
+
+ #search-icon-640:before{
+ 	content: url("../base-elements/menu-640-search-icon.svg");
+ 	border-bottom: 1px #555555 solid;
+ 	padding-bottom: 15px;
+ }
+
+
+#menu-items input {
+	height: 50px;
+	padding: 0;
+	padding-top: 10px;
+	line-height: 30px;
+	color: #555555;
+	border-top:none;
+	border-right: none;
+	border-left: none;
+	border-bottom: 1px #555555 solid;
+	background-color: rgba(0, 0, 0, .5)
+}
+
+::-webkit-input-placeholder {
+	color: #555555 !important;
+	overflow: visible;
+	font-size: 50px;
+	padding-bottom: 40px;
+	line-height: 20px;
+}
+
+#menu-items li div {
+	padding: 0;
+}
+#menu-items li {
+	opacity: 0;
+}
+
+
+.animated { 
+    -webkit-animation-duration: 1s; 
+    animation-duration: 1s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+
+} 
+
+@-webkit-keyframes bounceInDown { 
+   0% { 
+       opacity: 0; 
+        -webkit-transform: translateY(-1000px); 
+    } 
+    60% { 
+        opacity: 1; 
+        -webkit-transform: translateY(5px); 
+    } 
+    80% { 
+        -webkit-transform: translateY(-5px); 
+    } 
+    100% { 
+        -webkit-transform: translateY(0); 
+    } 
+} 
+
+@keyframes bounceInDown { 
+    0% { 
+        opacity: 0; 
+        transform: translateY(-1000px); 
+    } 
+    60% { 
+        opacity: 1; 
+        transform: translateY(5px); 
+    } 
+    80% { 
+        transform: translateY(-5px); 
+    } 
+    100% { 
+        transform: translateY(0); 
+    } 
+} 
+
+.bounceInDown { 
+    -webkit-animation-name: bounceInDown; 
+    animation-name: bounceInDown; 
+}
+
+.magictime {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.swashIn {
+  -webkit-animation-name: swashIn;
+  animation-name: swashIn;
+  -webkit-animation-delay: .5s; /* Chrome, Safari, Opera */
+    animation-delay: .5s;
+}
+
+
+@-webkit-keyframes swashIn {
+  0% {
+    opacity: 0;
+    -webkit-transform-origin: 20% 50%;
+    -webkit-transform: scale(0, 0);
+  }
+
+  100% {
+  	opacity: 1;
+    -webkit-transform-origin: 20% 50%;
+    -webkit-transform: scale(1, 1);
+  }
+}
+
+@keyframes swashIn {
+  0% {
+    opacity: 0;
+    -webkit-transform-origin: 20% 50%;
+    -webkit-transform: scale(0, 0);
+  }
+ 
+  100% {
+  	opacity: 1;
+    -webkit-transform-origin: 20% 50%;
+    -webkit-transform: scale(1, 1);
+  }
+}
+
