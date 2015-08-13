@@ -246,9 +246,7 @@
 	color: #999999;
 	margin-left: 20px;
 }
-#social-media-for-show-menu a {
-	margin-right: -13px;
-}
+
 
  #search-icon-640:before{
  	content: url("../base-elements/menu-640-search-icon.svg");
@@ -396,7 +394,7 @@
 	}
 
 	#social-media-for-show-menu a {
-		margin-right: -10px;
+		/*margin-right: -10px;*/
 	}
 }
 
@@ -420,7 +418,7 @@
 		margin-left: 20px;
 	}
 	#social-media-for-show-menu a {
-		margin-right: -5px;
+		/*margin-right: -5px;*/
 
 	}
 
