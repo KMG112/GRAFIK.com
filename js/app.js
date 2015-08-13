@@ -21,3 +21,25 @@ $("#grafik-form").on("click", function(){
 		$(".tabs a[tabindex='-1'] h2").css("color", "black")}, 10)
 
 });
+
+
+var block5_lis = $("#block5 li");
+var block5_labels = $("#block5 label");
+$.each(block5_labels, function(i){
+	var block5_index = i;
+	$(this).on("click", function() {
+		block5_lis.removeClass("active");
+		$(block5_lis.get(block5_index)).addClass("active");
+		$("#info-enter-panel-2").show();
+	});
+	$(this).on("mouseover", function() {
+		block5_lis.removeClass("hover");
+		$(block5_lis.get(block5_index)).addClass("hover");
+	});
+});
+
+
+function toggle_visibility(el) {
+	$("#"+el).show();
+}
+

@@ -1,4 +1,6 @@
-
+#nav-body{
+	z-index: -10 !important;
+}
 .name {
 	padding:5px 15px 0 15px;
 }
@@ -19,12 +21,18 @@
  #grafik-logo-pic:before{
 
  	content: url("../base-elements/menu-1200-grafik-logo.svg");
- }
+ }	
  #grafik-mantra-pic:before{
- 	content: url("../base-elements/menu-1200-grafik-mantra.png");
+ 	content: url("../navbar/menu-1200-grafik-mantra.png");
  }
 
+  #grafik-mantra-pic{
+  	height: 10px;
+  }
 
+#direction-icon:before{
+	content: url("../base-elements/menu-640-location-icon.svg");
+}
 
 #hamburger{
 	width: 30px;
@@ -149,7 +157,6 @@
 
 
 #menu{
-	font-family: "Forza A" !important;
 	z-index: -1;
 	display: none;
 	bottom: 100%;
@@ -160,12 +167,11 @@
 	background-color: black;
 }
 #menu ul{
-
 	list-style-type: none;
 }
 #list-holder{
 	margin-top: 100px;
-	padding-left: 100px;
+	padding-left: 50px;
 }
 
 #menu-items ul li{
@@ -184,6 +190,12 @@
 	padding-top: 46px;
 }
 
+#social-media-for-show-menu a:last-child{
+	transform: scale(0,0);
+}
+#social-media-for-show-menu a:nth-child(10){
+	transform: scale(0,0);
+}
 
 #info-show-menu{
 	padding: 15px 15px 0 15px;
@@ -215,11 +227,13 @@
 }
 
 #contact-info-for-show-menu h3{
+	font-size: 30px;
+	font-weight: normal;
 	padding-top: 27px;
 	color:#999999;
 }
 #social-media-for-show-menu{
-	margin-top: -10px;
+	margin-top: -15px;
 	margin-left: -5px;
 }
 
@@ -329,8 +343,8 @@
 .swashIn {
   -webkit-animation-name: swashIn;
   animation-name: swashIn;
-  -webkit-animation-delay: .5s; /* Chrome, Safari, Opera */
-    animation-delay: .5s;
+  -webkit-animation-delay: .2s; /* Chrome, Safari, Opera */
+    animation-delay: .2s;
 }
 
 
@@ -362,3 +376,52 @@
   }
 }
 
+
+@media screen and (max-width: 400px) {
+	#menu-items {
+		margin-top: -50px !important;
+		margin-left: -20px;
+	}
+	#social-media-for-show-menu{
+		margin-top: -20px;
+		margin-left: 10px;
+	}
+	#contact-info-for-show-menu h3{
+		font-size: 15px !important;
+		padding: 0 0 0 5px;
+	}
+	#contact-info-for-show-menu h3:last-child{
+		margin-top: -5px;
+
+	}
+
+	#social-media-for-show-menu a {
+		margin-right: -10px;
+	}
+}
+
+@media screen and (min-width: 400px) and (max-width: 1100px) {
+	#menu-items {
+		margin-top: -80px !important;
+		margin-left: -20px;
+		/*font-size: 40px;*/
+	}
+	#social-media-for-show-menu{
+		margin-top: -20px;
+		margin-left: 10px;
+		width: 350px;
+		
+	}
+	#contact-info-for-show-menu h3{
+		padding: 0 0 0 5px;
+		font-size: 20px;
+	}
+	#contact-info-for-show-menu{
+		margin-left: 20px;
+	}
+	#social-media-for-show-menu a {
+		margin-right: -5px;
+
+	}
+
+}

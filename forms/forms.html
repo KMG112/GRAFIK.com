@@ -10,54 +10,56 @@
  	
   </head>
   <body>
-	<form class="large-5 columns" id ="grafik-form">
+	<form class="large-11 columns" id ="grafik-form">
 	
     <ul class="tabs" data-tab="">
-	  <li class="tab-title active large-5 columns" id="first-tab"><a href="#panel1"><h2>I want to Hire <span id="form-color-seperate">You</span></h2></a></li>
-	  <li class="tab-title large-5 columns left"><a href="#panel2"><h2>I want you to hire <span id="form-color-seperate">Me</h2></span></a></li>
+	  <li class="tab-title large-6 columns" id="first-tab"><a href="#panel1"><h2>I want to Hire <span id="form-color-seperate">You</span></h2></a></li>
+	  <li class="tab-title large-6 columns left"><a href="#panel2"><h2>I want you to hire <span id="form-color-seperate">Me</h2></span></a></li>
 	 
 	</ul>
 	
 	<div class="tabs-content ">
-	  <div class="content active" id="panel1" >
-	    
-	   <div class="radio-toolbar large-7 columns" >
+        
+	  <div class="content" id="panel1" >
+
+	   <div class="radio-toolbar large-10 columns" onclick="toggle_visibility('radio-toolbar-2-holder')">
     	   <h2 id="orange-headers-for-form" >For...</h2>
     	    <input type="radio" id="radio1" name="radios" value="all" >
-    	    <label for="radio1"><h2>Band Strategy</h2></label>
+    	    <label for="radio1"><h1>Band Strategy</h1></label>
 
     	    <input type="radio" id="radio2" name="radios"value="false">
-    	    <label for="radio2"><h2>Brand Identity</h2></label>
+    	    <label for="radio2"><h1>Brand Identity</h1></label>
 
     	    <input type="radio" id="radio3" name="radios" value="true">
-    	    <label for="radio3"><h2>Brand Engagement</h2></label> 
-		</div>
+    	    <label for="radio3"><h1>Brand Engagement</h1></label> 
 
+		</div>
+        
 	  
 
 	
 
-	<div class="large-12 columns radio-toolbar-2-holder">
+	<div class="large-12 columns radio-toolbar-2-holder" id="radio-toolbar-2-holder" onclick="toggle_visibility('info-enter')">
 	  <ul class="radio-toolbar-2 large-7 columns row">
 	  	<h2 id="orange-headers-for-form" >To...</h2>
-	  	<li><input type="radio" id="secondradio1" name="radios-2" value="all" >
+	  	<li><input type="radio" id="secondradio1" name="radios-2" value="1" >
 	    <label for="secondradio1">Help me launch a brand extension</label></li>
 
-	   <li> <input type="radio" id="secondradio2" name="radios-2" value="false">
+	   <li> <input type="radio" id="secondradio2" name="radios-2" value="2">
 	    <label for="secondradio2">Introduce a new product</label></li>
 
-	    <li><input type="radio" id="secondradio3" name="radios-2" value="true">
+	    <li><input type="radio" id="secondradio3" name="radios-2" value="3">
 	    <label for="secondradio3">Rebrand my company</label></li>
-	   <li><input type="radio" id="secondradio4" name="radios-2" value="all" >
+	   <li><input type="radio" id="secondradio4" name="radios-2" value="4" >
 	    <label for="secondradio4">Increase engagement</label></li>
 
-	    <li><input type="radio" id="secondradio5" name="radios-2"value="false">
+	    <li><input type="radio" id="secondradio5" name="radios-2" value="5">
 	    <label for="secondradio5">Other</label></li>
 
 	  </ul>
 	</div>
-
-    <div class="large-12 columns info-enter">
+    <div id="info-enter">
+    <div class="large-12 columns info-enter" >
      
         <div class="row">
             <div class="small-1 columns label-info-text-input">
@@ -71,6 +73,7 @@
 
         <div class="row">
 
+
             <div class="small-2 columns label-info-text-input">
                 <label for="ad_project_reference" class="right inline">My email is</label>
             </div>
@@ -81,7 +84,7 @@
           
         </div>
   
-      <div class="row">
+      <div class="row" >
 
             <div class="small-2 columns label-info-text-input">
                 <label for="ad_project_reference" class="right inline">Call me</label>
@@ -91,7 +94,7 @@
             </div>
 
           
-        </div>
+      </div>
       <div class="row">
 
             <div class="small-2 columns label-info-text-input">
@@ -117,7 +120,7 @@
         </div>
     </div>
 
-  <div class="row">
+  <div class="row" id="details-on-proj">
             <div class="large 12 columns test" id="details-on-proj">
                 <label for="ad_project_title" class="left inline "><h2>Some details on my project:<h2></label>
             </div>
@@ -145,11 +148,14 @@
     	  <input type="hidden">
     	</div>
 	</div>
+    </div>
 
 </div>
 
     <div id="panel2" class="content">
-        <div class="large-12 columns radio-toolbar-3-holder">
+
+        <div class="large-12 columns radio-toolbar-3-holder" id="block5">
+        <div class="large-12 columns radio-toolbar-3-holder" id="block1" onclick="toggle_visibility('info-enter-panel-2')">
           <ul class="radio-toolbar-3 row">
             <h2 id="orange-headers-for-form" >As...</h2>
             <li class="large-6 columns"><input type="radio" id="thirdradio1" name="radios-3" value="all" >
@@ -177,7 +183,7 @@
         </div>
 
 
-        <div class="large-12 columns info-enter">
+        <div class="large-12 columns info-enter" id="info-enter-panel-2">
      
         <div class="row">
             <div class="small-1 columns label-info-text-input">
@@ -209,7 +215,7 @@
             <div class="small-6 columns left info-text-input">
                 <input type="text" name="ad_project_reference" id="ad_project_reference" value="" placeholder="000.000.000"/>
             </div>
-
+        
           
         </div>
       <div class="row">
@@ -241,6 +247,7 @@
 
     </div>
     </div>
+
 </form>
 
 	<script src="../bower_components/jquery/dist/jquery.min.js"></script>
