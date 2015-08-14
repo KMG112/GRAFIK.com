@@ -17,29 +17,25 @@ $(".tabs .active h2").css("color", "white");
 $("#grafik-form").on("click", function(){
 
 	setInterval(function(){
-		$(".tabs a[tabindex='0'] h2").css("color", "white");
-		$(".tabs a[tabindex='-1'] h2").css("color", "black")}, 10)
-
+		$(".tabs a[tabindex='0'] h1").css("color", "white");
+		$(".tabs a[tabindex='-1'] h1").css("color", "black")}, 10)
+		$("html, body").animate({ scrollTop: $(document).height() }, "slow");
 });
 
+var radio1_labels = $(".radio-toolbar label");
+var radio2_labels = $(".radio-toolbar-2 label");
+var radio3_labels = $(".radio-toolbar-3 label");
 
-var block5_lis = $("#block5 li");
-var block5_labels = $("#block5 label");
-$.each(block5_labels, function(i){
-	var block5_index = i;
-	$(this).on("click", function() {
-		block5_lis.removeClass("active");
-		$(block5_lis.get(block5_index)).addClass("active");
-		$("#info-enter-panel-2").show();
+function toggle_visibility(el, next) {
+	$.each(el, function(){
+		$(this).on("click", function() {
+			$(next).show();
+			$("html, body").animate({ scrollTop: $(document).height()-$(window).height()}, "slow");
+		});
 	});
-	$(this).on("mouseover", function() {
-		block5_lis.removeClass("hover");
-		$(block5_lis.get(block5_index)).addClass("hover");
-	});
-});
-
-
-function toggle_visibility(el) {
-	$("#"+el).show();
 }
+toggle_visibility(radio1_labels, ".radio-toolbar-2")
+toggle_visibility(radio2_labels, "#info-enter")
 
+
+toggle_visibility(radio3_labels, "#info-enter-panel-2")

@@ -13,17 +13,17 @@
 	<form class="large-11 columns" id ="grafik-form">
 	
     <ul class="tabs" data-tab="">
-	  <li class="tab-title large-6 columns" id="first-tab"><a href="#panel1"><h2>I want to Hire <span id="form-color-seperate">You</span></h2></a></li>
-	  <li class="tab-title large-6 columns left"><a href="#panel2"><h2>I want you to hire <span id="form-color-seperate">Me</h2></span></a></li>
+	  <li class="tab-title large-6 columns" id="first-tab"><a href="#panel1"><h1>I want to Hire <span id="form-color-seperate">You</span></h1></a></li>
+	  <li class="tab-title large-6 columns left"><a href="#panel2"><h1>I want you to hire <span id="form-color-seperate">Me</h1></span></a></li>
 	 
 	</ul>
 	
-	<div class="tabs-content ">
+	<div class="tabs-content">
         
 	  <div class="content" id="panel1" >
 
-	   <div class="radio-toolbar large-10 columns" onclick="toggle_visibility('radio-toolbar-2-holder')">
-    	   <h2 id="orange-headers-for-form" >For...</h2>
+	   <div class="radio-toolbar large-10 columns" >
+    	   <h1 id="orange-headers-for-form" >For...</h1>
     	    <input type="radio" id="radio1" name="radios" value="all" >
     	    <label for="radio1"><h1>Band Strategy</h1></label>
 
@@ -35,28 +35,25 @@
 
 		</div>
         
-	  
 
-	
+	<div class="large-12 columns radio-toolbar-2-holder" id="radio-toolbar-2-holder theme-tabs theme-tab-content">
+	  <div class="radio-toolbar-2 large-7 columns row">
+	  	<h1 id="orange-headers-for-form" >To...</h1>
+	  	<input type="radio" id="secondradio1" name="radios-2" value="1" >
+	    <label for="secondradio1">Help me launch a brand extension</label>
 
-	<div class="large-12 columns radio-toolbar-2-holder" id="radio-toolbar-2-holder" onclick="toggle_visibility('info-enter')">
-	  <ul class="radio-toolbar-2 large-7 columns row">
-	  	<h2 id="orange-headers-for-form" >To...</h2>
-	  	<li><input type="radio" id="secondradio1" name="radios-2" value="1" >
-	    <label for="secondradio1">Help me launch a brand extension</label></li>
+	    <input type="radio" id="secondradio2" name="radios-2" value="2">
+	    <label for="secondradio2">Introduce a new product</label>
 
-	   <li> <input type="radio" id="secondradio2" name="radios-2" value="2">
-	    <label for="secondradio2">Introduce a new product</label></li>
+	    <input type="radio" id="secondradio3" name="radios-2" value="3">
+	    <label for="secondradio3">Rebrand my company</label>
+	   <input type="radio" id="secondradio4" name="radios-2" value="4" >
+	    <label for="secondradio4">Increase engagement</label>
 
-	    <li><input type="radio" id="secondradio3" name="radios-2" value="3">
-	    <label for="secondradio3">Rebrand my company</label></li>
-	   <li><input type="radio" id="secondradio4" name="radios-2" value="4" >
-	    <label for="secondradio4">Increase engagement</label></li>
+	    <input type="radio" id="secondradio5" name="radios-2" value="5">
+	    <label for="secondradio5">Other</label>
 
-	    <li><input type="radio" id="secondradio5" name="radios-2" value="5">
-	    <label for="secondradio5">Other</label></li>
-
-	  </ul>
+	  </div>
 	</div>
     <div id="info-enter">
     <div class="large-12 columns info-enter" >
@@ -155,30 +152,35 @@
     <div id="panel2" class="content">
 
         <div class="large-12 columns radio-toolbar-3-holder" id="block5">
-        <div class="large-12 columns radio-toolbar-3-holder" id="block1" onclick="toggle_visibility('info-enter-panel-2')">
+       
           <ul class="radio-toolbar-3 row">
-            <h2 id="orange-headers-for-form" >As...</h2>
-            <li class="large-6 columns"><input type="radio" id="thirdradio1" name="radios-3" value="all" >
-            <label for="thirdradio1" >A copywriter</label></li>
+            <h1 id="orange-headers-for-form" >As...</h1>
+            <div class="radio-3-left large-6 columns">
+                <input type="radio" id="thirdradio1" name="radios-3" value="all" >
+                <label for="thirdradio1" >A copywriter</label>
 
-           <li class="large-6 columns"> <input type="radio" id="thirdradio2" name="radios-3" value="false">
-            <label for="thirdradio2" >A designer</label></li>
+                <input type="radio" id="thirdradio2" name="radios-3" value="false">
+                <label for="thirdradio2" >A designer</label>
 
-            <li class="large-6 columns"><input type="radio" id="thirdradio3" name="radios-3" value="true">
-            <label for="thirdradio3">An Art Director</label></li>
+                <input type="radio" id="thirdradio3" name="radios-3" value="true">
+                <label for="thirdradio3">An Art Director</label>
 
-           <li class="large-6 columns"><input type="radio" id="thirdradio4" name="radios-3" value="all" >
-            <label for="thirdradio4" >A Web Developer</label></li>
-            
-             <li class="large-6 columns"><input type="radio" id="thirdradio5" name="radios-3"value="false">
-            <label for="thirdradio5" >A Strategist</label></li>
+               <input type="radio" id="thirdradio4" name="radios-3" value="all" >
+                <label for="thirdradio4" >A Web Developer</label>
+                
+                </div>
 
-             <li class="large-6 columns"><input type="radio" id="thirdradio6" name="radios-3"value="false">
-            <label for="thirdradio6" >An Account Manager</label></li>
+                <div class="radio-3-right large-6 columns right">
 
-            <li class="large-6 columns"><input type="radio" id="thirdradio7" name="radios-3"value="false">
-            <label for="thirdradio7" >Other</label></li>
+                 <input type="radio" id="thirdradio5" name="radios-3"value="false">
+                <label for="thirdradio5" >A Strategist</label>
 
+                 <input type="radio" id="thirdradio6" name="radios-3"value="false">
+                <label for="thirdradio6" >An Account Manager</label>
+
+                <input type="radio" id="thirdradio7" name="radios-3"value="false">
+                <label for="thirdradio7" >Other</label>
+            </div>
           </ul>
         </div>
 
