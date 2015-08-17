@@ -10,7 +10,7 @@
  	
   </head>
   <body>
-	<form class="large-11 columns" id ="grafik-form">
+	<form class="large-10 columns" id ="grafik-form">
 	
     <ul class="tabs" data-tab="">
 	  <li class="tab-title large-6 columns" id="first-tab"><a href="#panel1"><h1>I want to Hire <span id="form-color-seperate">You</span></h1></a></li>
@@ -81,7 +81,7 @@
           
         </div>
   
-      <div class="row" >
+      <div class="row">
 
             <div class="small-2 columns label-info-text-input">
                 <label for="ad_project_reference" class="right inline">Call me</label>
@@ -118,34 +118,57 @@
     </div>
 
   <div class="row" id="details-on-proj">
-            <div class="large 12 columns test" id="details-on-proj">
+            <div class="large 12 columns test" id="details-on-proj-header">
                 <label for="ad_project_title" class="left inline "><h2>Some details on my project:<h2></label>
             </div>
 
-            <div class="large-12 columns large left project-details-text-box" id="">
-                <textarea rows="9" name="textareaname" cols="50" placeholder="Details on my project"></textarea>
+            <div class="large-12 columns left project-details-text-box" id="">
+                <textarea rows="20" name="textareaname" cols="30" placeholder="Details on my project"></textarea>
             </div>
   </div>
 
 	<div id="slider-holder" class="row">
-		<h3 id="slider-label" clas="large-2 column">My budget is</h3>
-		<div class="range-slider round" data-slider data-options="start: 0; end: 1000000; step: 10000;">
-		  <span class="range-slider-handle" role="slider" tabindex="0"></span>
-		  <span class="range-slider-active-segment"></span>
-		  <input type="hidden" >
-		  <span id="current-number-selected-budget"></span>
-		  
-		</div>
-	</div>
-	<div id="slider-holder" class="row">
-		<h3 id="slider-label" clas="large-2 column">My budget is</h3>
-    	<div class="range-slider round" data-slider data-options="start: 0; end: 12 ; step: 1;">
-    	  <span class="range-slider-handle" role="slider" tabindex="0"></span>
-    	  <span class="range-slider-active-segment"></span>
-    	  <input type="hidden">
-    	</div>
-	</div>
+        
+        <h2 id="slider-label" class="large-6 column">My budget is</h2>
+        <div class="large-6 columns">
+            <div class="range-slider round" id="slider1" data-slider data-options="start: 25000; end: 1000000; step: 25000; display_selector: #current-number-selected-budget;">
+              <span class="range-slider-handle" role="slider" tabindex="0"></span>
+
+              <span class="range-slider-active-segment"></span>
+              <input type="hidden" >
+              <span id="dollar-sign-slider">$</span><span id="current-number-selected-budget"></span>
+              <span id="number-label-low">$25,000</span><span id="number-label-high">$1,000,000</span>
+              
+            </div>
+        </div>
     </div>
+    <div id="slider-holder" class="row">
+        
+        <h2 id="slider-label" class="large-6 column">My Timeline is</h2>
+        <div class="large-6 columns">
+        <div class="range-slider round" id="slider2" data-slider data-options="start: 0; end: 3 ; step: 1;">
+          <span class="range-slider-handle" role="slider" tabindex="0"></span>
+          <div class="dot-holder">
+              <span id="dot-1"></span>
+              <span id="dot-2"></span>
+              <span id="dot-3"></span>
+              <span id="dot-4"></span>
+          </div>
+          <span class="range-slider-active-segment"></span>
+          <input type="hidden">
+          <div class="dot-labels">
+              <span class="month-label-now">Now</span>
+              <span class="month-label-6">6 Months</span>
+              <span class="month-label-9">9 Months</span>
+              <span class="month-label-year">1 Year</span>
+          </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+   
+
 
 </div>
 
@@ -170,7 +193,7 @@
                 
                 </div>
 
-                <div class="radio-3-right large-6 columns right">
+                <div class="radio-3-right large-5 large-offset-1 columns right">
 
                  <input type="radio" id="thirdradio5" name="radios-3"value="false">
                 <label for="thirdradio5" >A Strategist</label>
@@ -187,6 +210,7 @@
 
         <div class="large-12 columns info-enter" id="info-enter-panel-2">
      
+        <div class="info-panel-2-input">
         <div class="row">
             <div class="small-1 columns label-info-text-input">
                 <label for="ad_project_title" class="left inline ">I am</label>
@@ -232,10 +256,10 @@
           
         </div> 
 
+    </div>
 
 
-
-        <div class="row" id="like-to-say-a-few">
+        <div class="large-12 columns" id="like-to-say-a-few">
             <div class="large 12 columns test">
                 <label for="ad_project_title" class="left inline "><h2>Id like to say a few more words...<h2></label>
             </div>

@@ -11,41 +11,31 @@
   </head>
   <body>
 
-<h1>Radio Bullets</h1>
-<form method="POST">
-	<ul class="theme-tabs">
-		<li>
-			<div class="theme-tab-hotspot">Tab A</div>
-			<div class="theme-tab-content">
-				<h2>Tab A Content</h2>
-				<p><input type="radio" name="radio-01" value="01" id="radio-01-01" /><label for="radio-01-01">Help me launch a brand extension</label></p>
-                <p><input type="radio" name="radio-01" value="02" id="radio-01-02" /><label for="radio-01-02">Introduce a new product</label></p>
-                <p><input type="radio" name="radio-01" value="03" id="radio-01-03" /><label for="radio-01-03">Rebrand my company</label></p>
-                <p><input type="radio" name="radio-01" value="04" id="radio-01-04" /><label for="radio-01-04">Increase engagement</label></p>
-                <p><input type="radio" name="radio-01" value="05" id="radio-01-05" /><label for="radio-01-05">Other</label></p>
+<div id="slider-holder" class="row">
+		
+		<h2 id="slider-label" class="large-6 column">My budget is</h2>
+		<div class="large-6 columns">
+			<div class="range-slider round" id="slider1" data-slider data-options="start: 25000; end: 1000000; step: 10000; display_selector: #current-number-selected-budget;">
+			  <span class="range-slider-handle" role="slider" tabindex="0"></span>
+			  <span class="range-slider-active-segment"></span>
+			  <input type="hidden" >
+			  <span id="dollar-sign-slider">$</span><span id="current-number-selected-budget"></span>
+			  
 			</div>
+	</div>
+</div>
+	<div id="slider-holder" class="row">
+		
+		<h2 id="slider-label" class="large-6 column">My budget is</h2>
+		<div class="large-6 columns">
+    	<div class="range-slider round" id="slider2" data-slider data-options="start: 0; end: 12 ; step: 1;">
+    	  <span class="range-slider-handle" role="slider" tabindex="0"></span>
+    	  <span class="range-slider-active-segment"></span>
+    	  <input type="hidden">
+    	</div>
+    	</div>
+	</div>
 
-		</li>
-		<li>
-			<div class="theme-tab-hotspot">Tab B</div>
-			<div class="theme-tab-content">
-				<h2>Tab B Content</h2>
-				<p><input type="radio" name="radio-02" value="01" id="radio-02-01" /><label for="radio-02-01">Band Strategy</label></p>
-				<p><input type="radio" name="radio-02" value="02" id="radio-02-02" /><label for="radio-02-02">Brand Identity</label></p>
-				<p><input type="radio" name="radio-02" value="03" id="radio-02-03" /><label for="radio-02-03">Brand Engagement</label></p>
-			</div>
-		</li>
-		<li>
-			<div class="theme-tab-hotspot">Tab C</div>
-			<div class="theme-tab-content">
-				<h2>Tab C Content</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			</div>
-		</li>
-	</ul>
-</form>
 
 <script src="../bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="../bower_components/foundation/js/foundation.min.js"></script>
@@ -56,11 +46,3 @@
   </body>
 </html>
 
-  <!-- <div class="theme-tab-content">
-                <h2>Tab A Content</h2>
-                <p><input type="radio" name="radio-01" value="01" id="radio-01-01" /><label for="radio-01-01">Help me launch a brand extension</label></p>
-                <p><input type="radio" name="radio-01" value="02" id="radio-01-02" /><label for="radio-01-02">Introduce a new product</label></p>
-                <p><input type="radio" name="radio-01" value="03" id="radio-01-03" /><label for="radio-01-03">Rebrand my company</label></p>
-                <p><input type="radio" name="radio-01" value="04" id="radio-01-04" /><label for="radio-01-03">Increase engagement</label></p>
-                <p><input type="radio" name="radio-01" value="05" id="radio-01-05" /><label for="radio-01-03">Other</label></p>
-            </div> -->
