@@ -10,7 +10,7 @@
  	
   </head>
   <body>
-	<form class="large-10 columns" id ="grafik-form">
+	<form class="large-10 columns" id ="grafik-form" data-abide>
 	
     <ul class="tabs" data-tab="">
 	  <li class="tab-title large-6 columns" id="first-tab"><a href="#panel1"><h1>I want to Hire <span id="form-color-seperate">You</span></h1></a></li>
@@ -75,7 +75,7 @@
                 <label for="ad_project_reference" class="right inline">My email is</label>
             </div>
             <div class="small-6 columns left info-text-input">
-                <input type="text" name="ad_project_reference" id="ad_project_reference" value="" placeholder="email"/>
+                <input type="text" name="ad_project_reference" id="ad_project_reference" value="" placeholder="email" required />
             </div>
 
           
@@ -87,7 +87,8 @@
                 <label for="ad_project_reference" class="right inline">Call me</label>
             </div>
             <div class="small-6 columns left info-text-input">
-                <input type="text" name="ad_project_reference" id="ad_project_reference" value="" placeholder="000.000.000"/>
+                <input type="text" pattern="integer"name="ad_project_reference" id="ad_project_reference" value="" placeholder="000.000.000" required/>
+                
             </div>
 
           
@@ -96,9 +97,11 @@
 
             <div class="small-2 columns label-info-text-input">
                 <label for="ad_project_reference" class="right inline">My comany is</label>
+
             </div>
             <div class="small-6 columns left info-text-input">
-                <input type="text" name="ad_project_reference" id="ad_project_reference" value="" placeholder="company name"/>
+                <input type="text" name="ad_project_reference" id="ad_project_reference" value="" placeholder="company name" required />
+
             </div>
 
           
@@ -110,7 +113,7 @@
                 <label for="ad_project_reference" class="right inline">Company's</label>
             </div>
             <div class="small-6 columns left info-text-input">
-                <input type="text" name="ad_project_reference" id="ad_project_reference" value="" placeholder="website"/>
+                <input type="text" name="ad_project_reference" id="ad_project_reference" value="" placeholder="website" required />
             </div>
 
           
@@ -123,7 +126,7 @@
             </div>
 
             <div class="large-12 columns left project-details-text-box" id="">
-                <textarea rows="20" name="textareaname" cols="30" placeholder="Details on my project"></textarea>
+                <textarea rows="20" name="textareaname" cols="30" placeholder="Details on my project" ></textarea>
             </div>
   </div>
 
@@ -131,7 +134,7 @@
         
         <h2 id="slider-label" class="large-6 column">My budget is</h2>
         <div class="large-6 columns">
-            <div class="range-slider round" id="slider1" data-slider data-options="start: 25000; end: 1000000; step: 25000; display_selector: #current-number-selected-budget;">
+            <div class="range-slider round" id="slider1" data-slider data-options="start: 25000; end: 1000000; step: 25000;">
               <span class="range-slider-handle" role="slider" tabindex="0"></span>
 
               <span class="range-slider-active-segment"></span>
@@ -141,6 +144,7 @@
               
             </div>
         </div>
+
     </div>
     <div id="slider-holder" class="row">
         
@@ -165,6 +169,8 @@
         </div>
         </div>
     </div>
+
+
 </div>
 
    
@@ -265,7 +271,7 @@
             </div>
 
             <div class="large-12 columns large left project-details-text-box" id="">
-                <textarea rows="9" name="textareaname" cols="50" placeholder="I like turtles"></textarea>
+                <textarea rows="20" name="textareaname" cols="50" placeholder="I like turtles"></textarea>
             </div>
         </div>
       

@@ -3,6 +3,7 @@
 $(document).foundation({
 	slider:{
     on_change: function(){
+    	addCommas("#slider1 input")
     	if($("#slider2 input").val() ==0){
     		$(".dot-labels span").css({"color": "#555555"})
     		$(".dot-holder span").show()
@@ -26,9 +27,8 @@ $(document).foundation({
     		$(".dot-holder span").show()
     	    $(".month-label-year").css({"color":"white"});
     	    $("#dot-4").css({"display":"none"});
-    	 }  
-    	
-    }
+    	 }
+    }, 
   }
 	});
 
@@ -43,13 +43,28 @@ $("#grafik-form").on("click", function(){
 	});
 });
 
+function addCommas(item){
+	var number=$(item).val()
+	if(number.length <=6){
+		newNumb = [number.slice(0,2)+","+number.slice(2, number.length)].join()
+		$("#current-number-selected-budget").text(newNumb)
+
+	}else{
+		newNumb = [number.slice(0,1)+","+number.slice(1, 4)+","+number.slice(4, number.length) ].join()
+		$("#current-number-selected-budget").text(newNumb)
+	}
+}
+
 function toggle_visibility(el, next) {
 	el.on("click", function() {
+		var oldHeight = $(document).height()
 		$(next).show();
-		$("html, body").animate({ scrollTop: $(document).height()-$(window).height()}, "easeOutQuint");
+		var heightDiff =$(document).height() - oldHeight
+		$("html, body").animate({ scrollTop:$(document).height() - heightDiff}, 700);
 		$(window).trigger("resize");
 	});
 }
+toggle_visibility($(".tabs"),".radio-toolbar");
 toggle_visibility($(".radio-toolbar label"), ".radio-toolbar-2");
 toggle_visibility($(".radio-toolbar-2 label"), "#info-enter");
 toggle_visibility($(".radio-toolbar-3 label"), "#info-enter-panel-2");
