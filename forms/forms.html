@@ -10,54 +10,53 @@
  	
   </head>
   <body>
-	<form class="large-5 columns" id ="grafik-form">
+	<form class="large-10 columns" id ="grafik-form">
 	
     <ul class="tabs" data-tab="">
-	  <li class="tab-title active large-5 columns" id="first-tab"><a href="#panel1"><h2>I want to Hire <span id="form-color-seperate">You</span></h2></a></li>
-	  <li class="tab-title large-5 columns left"><a href="#panel2"><h2>I want you to hire <span id="form-color-seperate">Me</h2></span></a></li>
+	  <li class="tab-title large-6 columns" id="first-tab"><a href="#panel1"><h1>I want to Hire <span id="form-color-seperate">You</span></h1></a></li>
+	  <li class="tab-title large-6 columns left"><a href="#panel2"><h1>I want you to hire <span id="form-color-seperate">Me</h1></span></a></li>
 	 
 	</ul>
 	
-	<div class="tabs-content ">
-	  <div class="content active" id="panel1" >
-	    
-	   <div class="radio-toolbar large-7 columns" >
-    	   <h2 id="orange-headers-for-form" >For...</h2>
+	<div class="tabs-content">
+        
+	  <div class="content" id="panel1" >
+
+	   <div class="radio-toolbar large-10 columns" >
+    	   <h1 id="orange-headers-for-form" >For...</h1>
     	    <input type="radio" id="radio1" name="radios" value="all" >
-    	    <label for="radio1"><h2>Band Strategy</h2></label>
+    	    <label for="radio1"><h1>Band Strategy</h1></label>
 
     	    <input type="radio" id="radio2" name="radios"value="false">
-    	    <label for="radio2"><h2>Brand Identity</h2></label>
+    	    <label for="radio2"><h1>Brand Identity</h1></label>
 
     	    <input type="radio" id="radio3" name="radios" value="true">
-    	    <label for="radio3"><h2>Brand Engagement</h2></label> 
+    	    <label for="radio3"><h1>Brand Engagement</h1></label> 
+
 		</div>
+        
 
-	  
+	<div class="large-12 columns radio-toolbar-2-holder" id="radio-toolbar-2-holder theme-tabs theme-tab-content">
+	  <div class="radio-toolbar-2 large-7 columns row">
+	  	<h1 id="orange-headers-for-form" >To...</h1>
+	  	<input type="radio" id="secondradio1" name="radios-2" value="1" >
+	    <label for="secondradio1">Help me launch a brand extension</label>
 
-	
+	    <input type="radio" id="secondradio2" name="radios-2" value="2">
+	    <label for="secondradio2">Introduce a new product</label>
 
-	<div class="large-12 columns radio-toolbar-2-holder">
-	  <ul class="radio-toolbar-2 large-7 columns row">
-	  	<h2 id="orange-headers-for-form" >To...</h2>
-	  	<li><input type="radio" id="secondradio1" name="radios-2" value="all" >
-	    <label for="secondradio1">Help me launch a brand extension</label></li>
+	    <input type="radio" id="secondradio3" name="radios-2" value="3">
+	    <label for="secondradio3">Rebrand my company</label>
+	   <input type="radio" id="secondradio4" name="radios-2" value="4" >
+	    <label for="secondradio4">Increase engagement</label>
 
-	   <li> <input type="radio" id="secondradio2" name="radios-2" value="false">
-	    <label for="secondradio2">Introduce a new product</label></li>
+	    <input type="radio" id="secondradio5" name="radios-2" value="5">
+	    <label for="secondradio5">Other</label>
 
-	    <li><input type="radio" id="secondradio3" name="radios-2" value="true">
-	    <label for="secondradio3">Rebrand my company</label></li>
-	   <li><input type="radio" id="secondradio4" name="radios-2" value="all" >
-	    <label for="secondradio4">Increase engagement</label></li>
-
-	    <li><input type="radio" id="secondradio5" name="radios-2"value="false">
-	    <label for="secondradio5">Other</label></li>
-
-	  </ul>
+	  </div>
 	</div>
-
-    <div class="large-12 columns info-enter">
+    <div id="info-enter">
+    <div class="large-12 columns info-enter" >
      
         <div class="row">
             <div class="small-1 columns label-info-text-input">
@@ -70,6 +69,7 @@
         </div>
 
         <div class="row">
+
 
             <div class="small-2 columns label-info-text-input">
                 <label for="ad_project_reference" class="right inline">My email is</label>
@@ -91,7 +91,7 @@
             </div>
 
           
-        </div>
+      </div>
       <div class="row">
 
             <div class="small-2 columns label-info-text-input">
@@ -117,68 +117,100 @@
         </div>
     </div>
 
-  <div class="row">
-            <div class="large 12 columns test" id="details-on-proj">
+  <div class="row" id="details-on-proj">
+            <div class="large 12 columns test" id="details-on-proj-header">
                 <label for="ad_project_title" class="left inline "><h2>Some details on my project:<h2></label>
             </div>
 
-            <div class="large-12 columns large left project-details-text-box" id="">
-                <textarea rows="9" name="textareaname" cols="50" placeholder="Details on my project"></textarea>
+            <div class="large-12 columns left project-details-text-box" id="">
+                <textarea rows="20" name="textareaname" cols="30" placeholder="Details on my project"></textarea>
             </div>
   </div>
 
 	<div id="slider-holder" class="row">
-		<h3 id="slider-label" clas="large-2 column">My budget is</h3>
-		<div class="range-slider round" data-slider data-options="start: 0; end: 1000000; step: 10000;">
-		  <span class="range-slider-handle" role="slider" tabindex="0"></span>
-		  <span class="range-slider-active-segment"></span>
-		  <input type="hidden" >
-		  <span id="current-number-selected-budget"></span>
-		  
-		</div>
-	</div>
-	<div id="slider-holder" class="row">
-		<h3 id="slider-label" clas="large-2 column">My budget is</h3>
-    	<div class="range-slider round" data-slider data-options="start: 0; end: 12 ; step: 1;">
-    	  <span class="range-slider-handle" role="slider" tabindex="0"></span>
-    	  <span class="range-slider-active-segment"></span>
-    	  <input type="hidden">
-    	</div>
-	</div>
+        
+        <h2 id="slider-label" class="large-6 column">My budget is</h2>
+        <div class="large-6 columns">
+            <div class="range-slider round" id="slider1" data-slider data-options="start: 25000; end: 1000000; step: 25000; display_selector: #current-number-selected-budget;">
+              <span class="range-slider-handle" role="slider" tabindex="0"></span>
+
+              <span class="range-slider-active-segment"></span>
+              <input type="hidden" >
+              <span id="dollar-sign-slider">$</span><span id="current-number-selected-budget"></span>
+              <span id="number-label-low">$25,000</span><span id="number-label-high">$1,000,000</span>
+              
+            </div>
+        </div>
+    </div>
+    <div id="slider-holder" class="row">
+        
+        <h2 id="slider-label" class="large-6 column">My Timeline is</h2>
+        <div class="large-6 columns">
+        <div class="range-slider round" id="slider2" data-slider data-options="start: 0; end: 3 ; step: 1;">
+          <span class="range-slider-handle" role="slider" tabindex="0"></span>
+          <div class="dot-holder">
+              <span id="dot-1"></span>
+              <span id="dot-2"></span>
+              <span id="dot-3"></span>
+              <span id="dot-4"></span>
+          </div>
+          <span class="range-slider-active-segment"></span>
+          <input type="hidden">
+          <div class="dot-labels">
+              <span class="month-label-now">Now</span>
+              <span class="month-label-6">6 Months</span>
+              <span class="month-label-9">9 Months</span>
+              <span class="month-label-year">1 Year</span>
+          </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+   
+
 
 </div>
 
     <div id="panel2" class="content">
-        <div class="large-12 columns radio-toolbar-3-holder">
+
+        <div class="large-12 columns radio-toolbar-3-holder" id="block5">
+       
           <ul class="radio-toolbar-3 row">
-            <h2 id="orange-headers-for-form" >As...</h2>
-            <li class="large-6 columns"><input type="radio" id="thirdradio1" name="radios-3" value="all" >
-            <label for="thirdradio1" >A copywriter</label></li>
+            <h1 id="orange-headers-for-form" >As...</h1>
+            <div class="radio-3-left large-6 columns">
+                <input type="radio" id="thirdradio1" name="radios-3" value="all" >
+                <label for="thirdradio1" >A copywriter</label>
 
-           <li class="large-6 columns"> <input type="radio" id="thirdradio2" name="radios-3" value="false">
-            <label for="thirdradio2" >A designer</label></li>
+                <input type="radio" id="thirdradio2" name="radios-3" value="false">
+                <label for="thirdradio2" >A designer</label>
 
-            <li class="large-6 columns"><input type="radio" id="thirdradio3" name="radios-3" value="true">
-            <label for="thirdradio3">An Art Director</label></li>
+                <input type="radio" id="thirdradio3" name="radios-3" value="true">
+                <label for="thirdradio3">An Art Director</label>
 
-           <li class="large-6 columns"><input type="radio" id="thirdradio4" name="radios-3" value="all" >
-            <label for="thirdradio4" >A Web Developer</label></li>
-            
-             <li class="large-6 columns"><input type="radio" id="thirdradio5" name="radios-3"value="false">
-            <label for="thirdradio5" >A Strategist</label></li>
+               <input type="radio" id="thirdradio4" name="radios-3" value="all" >
+                <label for="thirdradio4" >A Web Developer</label>
+                
+                </div>
 
-             <li class="large-6 columns"><input type="radio" id="thirdradio6" name="radios-3"value="false">
-            <label for="thirdradio6" >An Account Manager</label></li>
+                <div class="radio-3-right large-5 large-offset-1 columns right">
 
-            <li class="large-6 columns"><input type="radio" id="thirdradio7" name="radios-3"value="false">
-            <label for="thirdradio7" >Other</label></li>
+                 <input type="radio" id="thirdradio5" name="radios-3"value="false">
+                <label for="thirdradio5" >A Strategist</label>
 
+                 <input type="radio" id="thirdradio6" name="radios-3"value="false">
+                <label for="thirdradio6" >An Account Manager</label>
+
+                <input type="radio" id="thirdradio7" name="radios-3"value="false">
+                <label for="thirdradio7" >Other</label>
+            </div>
           </ul>
         </div>
 
 
-        <div class="large-12 columns info-enter">
+        <div class="large-12 columns info-enter" id="info-enter-panel-2">
      
+        <div class="info-panel-2-input">
         <div class="row">
             <div class="small-1 columns label-info-text-input">
                 <label for="ad_project_title" class="left inline ">I am</label>
@@ -209,7 +241,7 @@
             <div class="small-6 columns left info-text-input">
                 <input type="text" name="ad_project_reference" id="ad_project_reference" value="" placeholder="000.000.000"/>
             </div>
-
+        
           
         </div>
       <div class="row">
@@ -224,10 +256,10 @@
           
         </div> 
 
+    </div>
 
 
-
-        <div class="row" id="like-to-say-a-few">
+        <div class="large-12 columns" id="like-to-say-a-few">
             <div class="large 12 columns test">
                 <label for="ad_project_title" class="left inline "><h2>Id like to say a few more words...<h2></label>
             </div>
@@ -241,6 +273,7 @@
 
     </div>
     </div>
+
 </form>
 
 	<script src="../bower_components/jquery/dist/jquery.min.js"></script>
